@@ -104,7 +104,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     func fetchWeatherAndForecast(for city: String) {
-        let apiKey = "NKTLC7LY6K82SMSMKLPSZR4VM"
+        let apiKey = "Api-keyin"
         let urlString = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/\(city)?unitGroup=metric&key=\(apiKey)&include=current,days"
 
         AF.request(urlString).responseJSON { response in
